@@ -19,9 +19,11 @@ export default function Home() {
         {/* 가짜(Placeholder) 버튼 - 기능 추가를 위한 공간 */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* 여기에 새로운 기능(예: 로그인, 학습 시작)으로 연결되는 버튼을 추가하세요 */}
-          <button className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-200 transition-all transform hover:-translate-y-1">
-            수학 여정 시작하기
-          </button>
+          <Link href="/chat" className="w-full sm:w-auto">
+            <button className="w-full px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-200 transition-all transform hover:-translate-y-1">
+              수학 AI 멘토와 대화하기
+            </button>
+          </Link>
           
           <button className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold rounded-xl shadow-sm transition-all">
             둘러보기
